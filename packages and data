@@ -1,0 +1,24 @@
+#Terrorism regression analysis. 
+
+#Packages being used in this script.
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+%matplotlib inline
+
+
+#Importing dataset. 
+terrorism_data  = pd.read_csv(r'C:\\Users\\pjvdw\\Desktop\\terrorism\\fatalities-from-terrorism.csv')
+#Things to do for data: 
+#Clean - only use countries with data for both 2000 and 2020 - exclude all else. 
+
+
+
+
+#Intention for this script: 
+#I am going to perform regression analysis to determine which factors can lead to a rise in fatalities from terrorism. 
+#The terrorism related fatalities data is from ourworldindata.com. 
+#GDP data is from the World bank. 
