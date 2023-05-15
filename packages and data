@@ -28,6 +28,19 @@ GDPPC = pd.read_csv(r'C:\\Users\\pjvdw\\Desktop\\terrorism\\gdp data\\API_NY.GDP
 
 #Terorism data: 
 
-#Removing data before 2000 and after 2020. 
+#Data only goes up to 2020. 
+#Want to eliminate countries that don't have data points that go up to 2020. 
+#Need to eliminate all data points prior to 2000 for a conisistent measurement. 
 
-terrorism_data.drop(terrorism_data([terrorism_data.Year < 2000]) & ([terrorism_data.Year > 2020]))
+#Printing the columns so that I know what data I can call on. 
+print(terrorism_data.columns)
+
+#Cleaning up terrorism fatalities data - removing duplicate data and excluding pre-2000 data. 
+
+terrorism_data.drop_duplicates()
+
+
+terrorism_data
+#merging the data gdp and terrorism data sets. 
+
+print(GDPPC.columns)
