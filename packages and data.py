@@ -14,7 +14,6 @@ import matplotlib.pyplot as plt
 
 
 #Importing dataset. 
-#Number of fatalities caused by terrorism - data set from ourworldindata (https://ourworldindata.org/terrorism#terrorism-deaths-globally)
 
 terrorism_data  = pd.read_csv(r'C:\\Users\\pjvdw\\Desktop\\terrorism\\fatalities-from-terrorism.csv')
 
